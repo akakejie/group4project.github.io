@@ -1,0 +1,155 @@
+/* General Table Styles */
+.invoice-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    border: 3px solid #310052;
+}
+
+.invoice-table th, .invoice-table td {
+    padding: 8px;
+    border: 1px solid #000;
+}
+
+/* Header Row */
+.header {
+    background-color: #4B3B8E;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+.header2 {
+    background-color: #4B3B8E;
+    text-align: right;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+.invoice{
+    background-color: #8ED1E6;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Pay To and Customer Section */
+.pay-to, .customer {
+    background-color: #C8F7C5;
+    vertical-align: top;
+}
+
+
+
+/* Table Header Row */
+.table-header {
+    background-color: #4B3B8E;
+    color: white;
+    text-align: center;
+}
+
+.cost{
+    text-align: right;
+}
+
+/* Subtotal, Tax, and Grand Total Rows */
+.subtotal, .tax, .grand-total {
+    font-weight: bold;
+}
+
+.Bondpaper {
+    background-color: #F7F7C5;
+}
+
+.Paperclips {
+    background-color: #F7F7C5;
+}
+
+.subtotal {
+    background-color: White;
+}
+
+.tax {
+    background-color: #F7F7C5;
+}
+
+.grand-total {
+    background-color: #4B3B8E;
+    color: white;
+}
+
+.total {
+    text-align: right;
+}
+
+
+/* Form Table Styles */
+.form-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    border: 3px solid #310052;
+    
+}
+
+.form-table th, .form-table td {
+    padding: 10px;
+    border: 1px solid #000;
+    
+}
+
+.form-table thead th {
+    background-color: #8ED1E6;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #4B3B8E;
+    
+}
+
+.form-table tbody td {
+    background-color: #F7F7F7;
+    
+}
+
+.form-table input[type="text"],
+.form-table select,
+.form-table textarea {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    
+    
+}
+
+.form-table input[type="radio"],
+.form-table input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.form-table button {
+    padding: 13px 160px;
+    background-color: #8ED1E6;
+    color: #4B3B8E;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-table button:hover {
+    background-color: #4B3B8E;
+    color: white;
+}
+
