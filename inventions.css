@@ -1,10 +1,14 @@
 :root {
-  --dark-blue: #0a1128;
-  --midnight-blue: #001f54;
-  --blue: #034078;
-  --light-blue: #1282a2;
-  --off-white: #fefcfb;
+  --primary-dark: #0a1128;
+  --primary-medium: #001f54;
+  --primary-light: #034078;
+  --accent: #1282a2;
+  --background: #fefcfb;
+  --text-light: #fefcfb;
+  --Secondary-bg: #dbe9f4;
+  --shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
+
 
 * {
   margin: 0;
@@ -13,9 +17,9 @@
 }
 
 body {
-  background-color: #c2cdd7;
-  font-family: 'Arial', sans-serif;
-  color: var(--dark-blue);
+  background-color: #dbe9f4;
+  font-family: 'Tahoma', sans-serif;
+  color: #F7F9F7;
 }
 
 .page-container {
@@ -29,7 +33,7 @@ body {
 .main-nav {
   font-family: Tahoma, sans-serif;
   width: 100%;
-  background-color: var(--dark-blue);
+  background-color: var(--primary-dark);
 }
 
 .nav-container {
@@ -42,7 +46,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--midnight-blue);
+  border-bottom: 1px solid var(--primary-medium);
 }
 
 .logo {
@@ -57,7 +61,7 @@ body {
   font-family: Georgia, serif;
   font-size: 20px;
   font-weight: bold;
-  color: var(--off-white);
+  color: var(--text-light);
 }
 
 .nav-links {
@@ -70,7 +74,7 @@ body {
 
 .nav-link {
   font-size: 16px;
-  color: var(--off-white);
+  color: var(--text-light);
   text-decoration: none;
   cursor: pointer;
 }
@@ -78,78 +82,91 @@ body {
 .nav-link:hover,
 .nav-link:focus {
   text-decoration: underline;
-  }
-
-
-.categories {
-  text-align: center;
-  padding: 2rem;
 }
 
-.categories h1 {
-  font-family: Georgia, serif;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  font-weight: bold;
-  color: var(--dark-blue);
-}
-
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 2rem;
+.inventions-section {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 60px 20px;
 }
 
-.card {
-  position: relative;
-  width: 100%;
-  height: 450px;
-  overflow: hidden;
-  border-radius: 12px;
-  background-color: var(--off-white);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-.card img {
-  width: 100%;
-  height: 100%;
-  opacity: 0.75;
-  object-fit: cover;
-  display: block;
-  border-radius: 0;
-}
-
-.card:hover img {
-  opacity: 1.0;
-}
-
-.card-content {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-  color: var(--off-white);
-  padding: 1rem;
-  border-radius: 0;
-}
-
-.card-content h2 {
-  font-size: 1.5rem;
+.section-title {
+  color: #0a1128;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 30px;
   font-weight: bold;
-  margin-bottom: 0.5rem;
 }
 
-.card-content .description {
-  font-size: 1rem;
-  color: var(--off-white);
+.topic-description {
+  font-family: Tahoma, sans-serif;
+  color: #0a1128;
+  text-indent: 50px;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+
+.inventions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.invention-card {
+  background-color: #dbe9f4;
+  border-radius: 5px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.invention-card:hover {
+
+}
+
+.invention-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.invention-info {
+  padding: 20px;
+}
+
+.category {
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #0a1128;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.invention-title {
+  color: #0a1128;
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.author {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #0a1128;
+}
+
+.date {
+  font-size: 16px;
+  color: #0a1128;
 }
 
 .site-footer {
-  background-color: #0a1128;
-  color: #fefcfb;
+  background-color: var(--primary-dark);
+  color: var(--text-light);
   padding: 48px 24px;
 }
 
@@ -184,13 +201,13 @@ body {
 }
 
 .footer-links {
+  font-family: Tahoma, sans-serif;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
 .footer-link {
-  font-family: Tahoma, sans-serif;
   font-size: 16px;
   color: var(--text-light);
   text-decoration: none;
